@@ -71,6 +71,6 @@ int main() {
 			cout << str_input << " " << ret << endl;
 		}
 	}
-
+ 
 	return 0;
 }
