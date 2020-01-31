@@ -14,7 +14,7 @@ int main() {
 	long long n, a, b;
 	long long ans;
 
-	//freopen("input.txt", "r", stdin);
+	///freopen("input.txt", "r", stdin);
 
 	scanf("%d",&T);
 
