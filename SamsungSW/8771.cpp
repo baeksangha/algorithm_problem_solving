@@ -1,7 +1,7 @@
 /*
 8771. 덧셈 문제
 ios::sync_with_stdio(false)를 쓰고 cout을 써도 시간 초과가 났는데,
-cin, cout을 scanf, printf로 바꾸니 통과가 된 문제이다.
+cin, cout을 scanf, printf로 바꾸니 통과가 된 문제이다..
 */
 
 #include <iostream>
