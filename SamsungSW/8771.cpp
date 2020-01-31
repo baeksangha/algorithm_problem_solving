@@ -1,33 +1,33 @@
-	/*
-  8771. 덧셈 문제
-  ios::sync_with_stdio(false)를 쓰고 cout을 써도 시간 초과가 났는데,
-  cin, cout을 scanf, printf로 바꾸니 통과가 된 문제이다.
-  */
-  
-  #include <iostream>
-	using namespace std;
+/*
+8771. 덧셈 문제
+ios::sync_with_stdio(false)를 쓰고 cout을 써도 시간 초과가 났는데,
+cin, cout을 scanf, printf로 바꾸니 통과가 된 문제이다.
+*/
 
-	int main() {
+#include <iostream>
+using namespace std;
 
-		int test_case;
-		int T;
-		long long n, a, b;
-		long long ans;
+int main() {
 
-		//freopen("input.txt", "r", stdin);
+	int test_case;
+	int T;
+	long long n, a, b;
+	long long ans;
 
-		scanf("%d",&T);
+	//freopen("input.txt", "r", stdin);
 
-		for(test_case=1; test_case<=T; test_case++) {
+	scanf("%d",&T);
 
-			ans = 0;
-			scanf("%ld %ld %ld", &n, &a, &b);
+	for(test_case=1; test_case<=T; test_case++) {
 
-			if((n > 1 && a <= b) || (n == 1 && a == b))
-				ans = (b-a)*(n-2) + 1;
+		ans = 0;
+		scanf("%ld %ld %ld", &n, &a, &b);
 
-			printf("#%d %ld\n", test_case, ans);
-		}
+		if((n > 1 && a <= b) || (n == 1 && a == b))
+			ans = (b-a)*(n-2) + 1;
 
-		return 0;
+		printf("#%d %ld\n", test_case, ans);
 	}
+
+	return 0;
+}
