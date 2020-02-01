@@ -6,6 +6,8 @@
 
 cin, cout을 쓰니 timeout이 나왔는데,
 scanf와 printf로 바꾸니 괜찮아졌다.
+심지어 이번에도 ios::sync_with_stdio(false), cin.tie(NULL), cout.tie(NULL)
+을 모두 입력했는데도 시간초과다.. 10만개 중 1만개 밖에 통과하지 않는다..
 */
 
 #include <iostream>
