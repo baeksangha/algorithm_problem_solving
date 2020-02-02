@@ -10,26 +10,24 @@ using namespace std;
 
 int countPairs(vector<int> taken, vector<vector<int>> &is_friend) {
 
-	int target;
 	int n = (int)taken.size();
-	int std = 1;
+	int std = -1;
 	int ret = 0;
 
 	for(int i=0; i<n; i++) {
 		if(taken[i] == 0) {
-			target = i;
-			std = 0;
+			std = i;
 			break;
 		}
 	}
-	if(std == 1)
+	if(std == -1)
 		return 1;
 
 	for(int i=0; i<n; i++) {
-		if(taken[i] == 0 && is_friend[i][target] == 1) {
-			taken[i] = taken[target] = 1;
+		if(taken[i] == 0 && is_friend[i][std] == 1) {
+			taken[i] = taken[std] = 1;
 			ret += countPairs(taken, is_friend);
-			taken[i] = taken[target] = 0;
+			taken[i] = taken[std] = 0;
 		}
 	}
 
@@ -62,7 +60,7 @@ int main() {
 
 		ans = countPairs(taken, is_friend);
 
-		cout << "#" << test_case << " " << ans << endl;
+		cout << ans << endl;
 	}
 
 	return 0;
