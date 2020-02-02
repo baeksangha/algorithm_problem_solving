@@ -15,8 +15,8 @@ O(n^2)
 #include <vector>
 using namespace std;
 
-int dir_x[6][2] = {{1, 1},{0, 1}, {0, 1}, {1, 1}};
-int dir_y[6][2] = {{0, -1}, {1, 0}, {1, 1}, {0, 1}};
+int dir_x[4][2] = {{1, 1},{0, 1}, {0, 1}, {1, 1}};
+int dir_y[4][2] = {{0, -1}, {1, 0}, {1, 1}, {0, 1}};
 
 
 int isFit(int x, int y, vector<vector<char>> &map) {
